@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookItemView" customModule="LitnetList" customModuleProvider="target">
+            <connections>
+                <outlet property="authorLabel" destination="Bot-u4-mY9" id="GcF-i6-W2S"/>
+                <outlet property="genreLabel" destination="sF6-v2-akq" id="JTZ-1n-o4g"/>
+                <outlet property="handleButton" destination="iTM-Yx-Vvb" id="gWS-S6-sz0"/>
+                <outlet property="stackView" destination="h6J-Zw-CNL" id="Tv5-gy-SoV"/>
+                <outlet property="titleLabel" destination="8gG-hH-5To" id="OuG-Vo-uNo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h6J-Zw-CNL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-hH-5To">
+                            <rect key="frame" x="189.5" y="0.0" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sF6-v2-akq">
+                            <rect key="frame" x="189.5" y="25" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bot-u4-mY9">
+                            <rect key="frame" x="189.5" y="50" width="35.5" height="100"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTM-Yx-Vvb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                    <connections>
+                        <action selector="tapActionWithSender:" destination="-1" eventType="touchUpInside" id="RZv-Hs-9Ag"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="h6J-Zw-CNL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Yg-kY-soX"/>
+                <constraint firstAttribute="trailing" secondItem="iTM-Yx-Vvb" secondAttribute="trailing" id="JBZ-UK-UPx"/>
+                <constraint firstAttribute="bottom" secondItem="h6J-Zw-CNL" secondAttribute="bottom" id="OWC-xm-dWx"/>
+                <constraint firstItem="iTM-Yx-Vvb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Prg-rM-bpj"/>
+                <constraint firstAttribute="trailing" secondItem="h6J-Zw-CNL" secondAttribute="trailing" id="RUd-1j-6ca"/>
+                <constraint firstItem="iTM-Yx-Vvb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d1S-CU-PAn"/>
+                <constraint firstItem="h6J-Zw-CNL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gG9-gi-tD9"/>
+                <constraint firstAttribute="bottom" secondItem="iTM-Yx-Vvb" secondAttribute="bottom" id="qi4-JD-KbR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </view>
+    </objects>
+</document>

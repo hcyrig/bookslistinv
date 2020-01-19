@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lQk-It-TKy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reader View Controller-->
+        <scene sceneID="6RL-td-WlU">
+            <objects>
+                <viewController storyboardIdentifier="ReaderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lQk-It-TKy" customClass="ReaderViewController" customModule="LitnetList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZk-dy-atc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-03-6x3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ghe-N6-MGc">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lQk-It-TKy" id="Omj-di-Oiy"/>
+                                    <outlet property="delegate" destination="lQk-It-TKy" id="6w2-9k-UUd"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="YmD-aD-ORu">
+                                <rect key="frame" x="179.5" y="792" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rM6-03-6x3" firstAttribute="trailing" secondItem="toj-gg-PTI" secondAttribute="trailing" id="OBK-u6-mgA"/>
+                            <constraint firstItem="YmD-aD-ORu" firstAttribute="centerX" secondItem="fZk-dy-atc" secondAttribute="centerX" id="Q4y-oZ-jvR"/>
+                            <constraint firstItem="YmD-aD-ORu" firstAttribute="top" secondItem="rM6-03-6x3" secondAttribute="bottom" id="jxu-zA-keU"/>
+                            <constraint firstItem="rM6-03-6x3" firstAttribute="leading" secondItem="toj-gg-PTI" secondAttribute="leading" id="mEd-aP-tMo"/>
+                            <constraint firstItem="toj-gg-PTI" firstAttribute="bottom" secondItem="YmD-aD-ORu" secondAttribute="bottom" constant="33" id="r8M-eT-UqE"/>
+                            <constraint firstItem="rM6-03-6x3" firstAttribute="top" secondItem="toj-gg-PTI" secondAttribute="top" id="wku-38-ufB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="toj-gg-PTI"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="rM6-03-6x3" id="eZC-wa-4Yd"/>
+                        <outlet property="pageControl" destination="YmD-aD-ORu" id="XXu-EW-JRj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ph9-bM-BI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-5.9113300492610836"/>
+        </scene>
+    </scenes>
+</document>

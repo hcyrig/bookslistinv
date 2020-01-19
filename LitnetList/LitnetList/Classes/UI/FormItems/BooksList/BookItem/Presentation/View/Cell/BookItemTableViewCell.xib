@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BookItemTableViewCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="BookItemTableViewCell" id="KGk-i7-Jjw" customClass="BookItemTableViewCell" customModule="LitnetList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" restorationIdentifier="BookItemView" translatesAutoresizingMaskIntoConstraints="NO" id="H4Z-6t-15X" customClass="BookItemView" customModule="LitnetList" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9W-Di-SwZ">
+                        <rect key="frame" x="16" y="68" width="288" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="e4h-Yv-tk4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Q9W-Di-SwZ" secondAttribute="bottom" constant="8" id="1u3-5N-zey"/>
+                    <constraint firstItem="H4Z-6t-15X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LCO-Md-i8p"/>
+                    <constraint firstItem="H4Z-6t-15X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OkD-WK-Acs"/>
+                    <constraint firstItem="Q9W-Di-SwZ" firstAttribute="top" secondItem="H4Z-6t-15X" secondAttribute="bottom" constant="8" id="epk-Cf-HDS"/>
+                    <constraint firstAttribute="trailing" secondItem="Q9W-Di-SwZ" secondAttribute="trailing" constant="16" id="jaS-4A-UrX"/>
+                    <constraint firstAttribute="trailing" secondItem="H4Z-6t-15X" secondAttribute="trailing" id="nYm-Y8-fPA"/>
+                    <constraint firstItem="Q9W-Di-SwZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="y9m-4l-dSc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="view" destination="H4Z-6t-15X" id="wqm-uB-rKE"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="98"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,12 @@
+use_frameworks!
+inhibit_all_warnings!
+
+target 'LitnetList' do
+platform :ios, '12.4'
+
+pod 'Alamofire', '~> 4.8.2'
+pod 'PromiseKit', '~> 6.8.3'
+pod 'PromiseKit/Alamofire'
+pod 'TinyConstraints', '~> 4.0.1'
+
+end
